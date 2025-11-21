@@ -5,6 +5,7 @@ def login_screen():
     st.subheader("Please log in.")
     st.button("Log in with Google", on_click=st.login)
 
+# Main flow
 if not st.user.is_logged_in:
     login_screen()
 else:
